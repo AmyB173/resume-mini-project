@@ -23,6 +23,12 @@
     background-color: #525252;
 }
 
+.bg-color-three-reasons {
+    background-color: #fff;
+}
+
+
+
 /*---------------------------------------Special paddings margins and text*/
 h1, 
 h2, 
@@ -43,6 +49,25 @@ h4 {
 .inline-block {
     display: inline-block;
 }
+/*display: table; ensures that the columns remain equal height*/
+.row-table {
+    display: table;
+}
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    /* float ensures that something appears on the left of right side and all other text wraps around it, so it's outside of the main flow without appearing outside the main flow. */
+    /* older versions of bootstrap had floats automatically*/
+    float: none;
+}
+
+.section-heading{
+    font-family: "Exo 2", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
 
 /*---------------------------------------Heading */
 header {
